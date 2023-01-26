@@ -1,0 +1,33 @@
+
+
+.container{
+    display: flex;
+    height: 900px;
+    background-color: darkgoldenrod;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*ALIGN ITEM ALINEAR HORIZONTALMENTE*/
+/*JUSTIFY CONTENT ALINEAR VERTICALMENTE*/
+
+
+.container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: yellow;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    width: 200px;
+}
+
+@media (min-width:600px){
+    .container{
+      flex-direction: row;
+    }
+}
+
+

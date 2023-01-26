@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>CLOUD CODE· CLOUD POINT</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
+
+    <link href="/CLOUDPOINT/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--LINK DE BOOTRAP ICONOS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+     
+
+      .bxs-megaphone:before { content: "\f0c0";}
+      .space-i::before { margin-right: 10px; margin-left: 10px;}
+
+      .space{
+        text-align: center;
+        list-style: none;
+        text-decoration: none;
+      }
+      hr{
+        height: 2px;
+        background-color: green;
+
+      }
+      .logo-fidelizacion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 0;
+        margin-top: 0;
+      }
+     .logo-fidelizacion-img{
+        width: 150px;
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+        margin-top: 0;
+     }
+    
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="/CLOUDPOINT/dashboard.css" rel="stylesheet">
+  </head>
+<body>
+  <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">CLOUD CODE</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+    <div class="navbar-nav">
+      <div class="usuario text-nowrap">
+        <a class="nav-link px-3" href="#"><i class="bi bi-person-circle"></i></a>
+      </div>
+    </div>
+  </header>
+
+<div class="container-fluid">
+    <div class="row">
+<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3 sidebar-sticky">
+          <div class="logo-fidelizacion">
+            <img class="logo-fidelizacion-img" src="loyalty.svg">
+              <a href="#fidelizacion"><h3 class="space">Fidelizacion</h3></a>
+              <hr>
+          </div>
+          <ul class="nav flex-column">       
+            <li class="nav-item">
+              <a class="nav-link" href="#puntos">
+                <i class="bi bi-star space-i"></i>
+              Puntos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stamps">
+                <i class="bi bi-check2 space-i"></i>
+      
+              Stamps
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#marketing">
+                <i class="bi bi-megaphone space-i"></i>
+                Marketing
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gamificacion">
+                <i class="bi bi-controller  space-i"></i>
+                
+              Gamificacion
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Gifcards">
+                <i class="bi bi-gift space-i"></i>
+                Gif Cards
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#analiticas">
+                <i class="bi bi-graph-up space-i"></i>
+              Analiticas
+              </a>
+            </li>
+          </ul>  
+        </div>
+      </nav>
+<section id="fidelizacion" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 inicio-fideliacion ">
+      <img src="/CURSO DE BOOTSTRAP/dashboard/imagenes/166.jpeg" alt="" class="imagen-principal">
+
+      <img src="/CURSO DE BOOTSTRAP/dashboard/imagenes/tabla-fidelizacion.png" alt="" class="img-tabla-fidelizacion">
+    
+</section> 
+
+<section class="col-md-9 ms-sm-auto col-lg-10 px-md-4" id="puntos">
+  <h2 class="title-puntos">PUNTOS</h2>
+  <img src="/CURSO DE BOOTSTRAP/dashboard/imagenes/points.jpeg" alt="puntos" class="img-puntos">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">DESHACER </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">GUARDAR</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            <span data-feather="button" class="align-text-bottom"></span>
+            CHANGE PUSHED
+          </button>
+        </div>
+      </div>
+      <div class="header-balance">
+        <h2 class="balance">
+            Balance General
+        </h2>
+        <input type="tel" placeholder="15,0000" class="num-balance">
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm ">
+          <thead>
+            <tr>
+              <th scope="col">DISTRIBUCION DE PUNTOS X REDES</th>
+              <th scope="col">ASIGANDOS</th>
+              <th scope="col">VALOR X CLICK</th>
+              <th scope="col">STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="active-row-fc">
+              <td>
+                <input type="checkbox" name="facebook" id="facebook" class="checkbox">
+                <i class="bi bi-facebook"> <span>FACEBOOK</span></i>
+              </td>
+              <td> <input type="text" class="input-text"></td>
+              <td><input type="number" min="1" max="5" class="input-numero"> 
+              <td> <button class="APLICAR">APLICAR</button></td>
+            </tr>
+            <tr class="active-row-ig">
+                <td> 
+                  <input type="checkbox" name="facebook" id="facebook" class="checkbox">
+                  <i class="bi bi-instagram"> <span>INSTAGRAM</span></i>
+                </td>
+                <td> <input type="text" class="input-text"></td>
+                <td><input type="number" min="1" max="5" class="input-numero"> 
+                <td> <button class="APLICAR">APLICAR</button></td>
+              </tr>
+              <tr class="active-row-tw">
+                <td>
+                  <input type="checkbox" name="facebook" id="facebook" class="checkbox">
+                  <i class="bi bi-twitter"> <span>TWITER</span></i>
+                </td>
+                <td> <input type="text" class="input-text"></td>
+                <td><input type="number" min="1" max="5"class="input-numero"> 
+                <td> <button class="APLICAR">APLICAR</button></td>
+              </tr>
+              <tr class="active-row-yt">
+                <td>
+                  <input type="checkbox" name="facebook" id="facebook" class="checkbox">
+                  <i class="bi bi-youtube"> <span>YOUTUBE</span></i></i></td>
+                <td> <input type="text" class="input-text"></td>
+                <td><input type="number" min="1" max="5"class="input-numero"> 
+                <td> <button class="APLICAR">APLICAR</button></td>
+              </tr>
+              <tr class="active-row-lk">
+                <td>
+                  <input type="checkbox" name="facebook" id="facebook" class="checkbox">
+                  <i class="bi bi-linkedin"> <span>LINKEDING</span></i>
+                </td>
+                <td> <input type="text" class="input-text"></td>
+                <td><input type="number" min="1" max="5"class="input-numero">
+                <td> <button class="APLICAR">APLICAR</button></td> 
+                
+              </tr>
+              <tr class="active-row-sp">
+                <td>
+                  <input type="checkbox" name="facebook" id="facebook" class="checkbox">
+                  <i class="bi bi-snapchat"> <span>SNAPCHAT</span></i>
+                </td>
+                <td> <input type="text" class="input-text"></td>
+                <td><input type="number" min="1" max="5"class="input-numero">
+                <td> <button class="APLICAR">APLICAR</button></td> 
+                
+              </tr>
+              <tr class="active-row-tik">
+                <td>
+                  <input type="checkbox" name="facebook" id="facebook" class="checkbox">
+                  <i class="bi bi-tiktok"> <span>TIKTOK</span></i>
+                </td>
+                <td> <input type="text" class="input-text"></td>
+                <td><input type="number" min="1" max="5"class="input-numero"> 
+                  <td> <button class="APLICAR">APLICAR</button></td>
+              </tr>
+              <tr class="active-row-gl">
+                <td> 
+                <input type="checkbox" name="facebook" id="facebook" class="checkbox">
+                <i class="bi bi-google"> <span>GOOGLE</span></i></td>
+                <td> <input type="text" class="input-text"></td>
+                <td><input type="number" min="1" max="5"class="input-numero"> 
+                  <td> <button class="APLICAR">APLICAR</button></td>
+              </tr>
+                <tr class="active-row-web">
+                    <td>
+                      <input type="checkbox" name="facebook" id="facebook" class="checkbox">
+                      <i class="bi bi-laptop"> <span>PAGINA WEB</span></i></td>
+                    <td> <input type="text" class="input-text"></td>
+                    <td><input type="number" min="1" max="5"class="input-numero">
+                    <td> <button class="APLICAR">APLICAR</button></td>       
+                </tr>
+          </tbody>
+        </table>
+      </div>
+  </section>
+
+
+<section class="col-md-9 ms-sm-auto col-lg-10 px-md-4" id="stamps">
+  <h2>STAMPS </h2>
+  <img src="/CURSO DE BOOTSTRAP/dashboard/imagenes/stamp.jpeg" alt="" class="img-stamps">
+
+
+</section>
+
+<section id="marketing" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 ">
+  <h2>MARKETING </h2>
+  <img src="/CURSO DE BOOTSTRAP/dashboard/imagenes/marketing.jpeg" alt="" class="img-stamps">
+</section>
+
+<section id="gamificacion" class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+  <h2>GAMIFICACION </h2>
+  <img src="/CURSO DE BOOTSTRAP/dashboard/imagenes/gamificacion.png" alt="" class="img-stamps">
+</section>
+
+<section id="Gifcards" class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+  <h2>GIF CARDS</h2>
+  <img src="/CURSO DE BOOTSTRAP/dashboard/imagenes/gifcard.png" alt="" class="img-stamps">
+</section>
+
+<section id="Analiticas" class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+  <h2>ANALITICAS</h2>
+  <img src="/CURSO DE BOOTSTRAP/dashboard/imagenes/analiticas.jpeg" alt="" class="img-stamps">
+</section>
+
+
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
+  </body>
+</html>

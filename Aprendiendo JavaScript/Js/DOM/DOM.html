@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CON JS</title>
+    <style>
+        .azul{
+            color: aqua;
+        }
+        .rojo{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mostrar()">
+        MOSTRAR
+    </button>
+    <img src="/FRONT-END/AprendiendoHTML/images/prog.jpeg" id="imagen "alt="">
+
+    <button onclick="color()" id="color">APLICAR COLOR</button>
+    <script>
+        /*let cabecero =document.getElementById('cabecero').innerHTML;
+        console.log('Valor cabecero: '+cabecero)
+
+        let parrafo = document.getElementById('parrafo');
+        console.log(`Nuevo valor: ${parrafo.innerHTML}`)
+
+        parrafo.innerHTML ='Nuevo valor  Parrafo';
+        console.log('HOLA GUAPO')*/
+
+        /*let parrafo = document.getElementsByTagName('p')
+        console.log(`No. Parrafos:${parrafo.length}`);
+        for (let i=0; i<parrafo.length; i++){
+            console.log(`i:${i} - ${parrafo[i].innerHTML}`)
+        }*/
+
+        /*let parrafos = document.querySelector('p.azul')
+        console.log(`No. Parrafos:${parrafos.length}`);
+        for (let parrafo of parrafos){
+            console.log(`${parrafo.innerHTML}`)
+        }       */  
+    </script>
+    
+    <script>
+        /*MODIFICANDO VALOR A LOS ELEMENTOS CON BYID*/
+        function mostrar(){
+            /*document.getElementById('adios').innerHTML='ADIOS NINO'*/
+            document.getElementById('imagen').src='https://i.pinimg.com/564x/4d/de/13/4dde13b10285412ce6b7a4d58139c204.jpg'
+        }
+        
+    </script>
+    <script>
+        function color(){
+            document.getElementById('color').style.color='blue'
+        }
+    </script>
+</body>
+</html>

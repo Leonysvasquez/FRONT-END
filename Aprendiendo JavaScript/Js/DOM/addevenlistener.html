@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDLISTENER</title>
+</head>
+<body>
+    <h1 id="titulo">Manejo de DOM CON JS</h1>
+    <br>
+    Nombre: <input type="text" id="nombre" onfocus="cambiar(this)">
+    <br>
+    Apellido <input class="" id="apellido"  onfocus="cambiar(this)"></input>
+
+
+    <script>
+        //FUNTION FLECHA/.
+        document.getElementById('nombre').addEventListener('focus',(evento)=>{
+            evento.target.style.background='pink'
+        })
+        document.getElementById('apellido').addEventListener('focus',cambiar)
+        document.getElementById('nombre').addEventListener('blur',regresar)
+        document.getElementById('apellido').addEventListener('blur',regresar)
+        function cambiar(evento){
+            let componente = evento.target;
+            componente.style.background='blue';
+        }
+
+        function regresar(evento){
+         evento.target.style.background='white';
+            
+        }
+    </script>
+</body>
+</html>

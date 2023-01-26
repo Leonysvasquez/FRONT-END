@@ -1,0 +1,28 @@
+
+
+.dotted{border-style: dotted;}
+
+.dashed{border-style: dashed;}
+
+.solid{
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px 10px 5px 15px;
+    border-color: aqua yellow red blue;
+}
+
+
+
+.duble{border-style: double;}
+
+.groove{border-style: groove;}
+
+.ridge{border-style: ridge;}
+
+.outset{border-style: inset;}
+
+.none{border-style: outset;}
+
+.hidden{border-style: none;}
+
+.mix{border-style: hidden dotted solid double;}

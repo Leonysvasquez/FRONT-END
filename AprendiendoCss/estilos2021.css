@@ -1,0 +1,84 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html{
+	background: #c0c0c0;
+}
+
+#contenedor{
+	width: 750px;
+	height: 750px;
+	background: red;
+	margin: auto;
+	margin-top: 10px;
+
+}
+header{
+	width: 750px;
+	height: 250px;
+	background: purple;
+}
+#banner{
+	width: 500px;
+	height: 250px;
+	background: #000;
+	float: right;
+}
+
+#logo{
+	height: 125px;
+	width: 250px;
+	background: red;
+	float: left;
+}
+#buscador1{
+	height: 125px;
+	width: 250px;
+	background: yellow;
+	float: left;
+}
+nav{
+	height: 50px;
+	background: blue;
+}
+nav ul{
+	list-style: none;
+
+}
+nav ul li{
+	float: left;
+}
+nav a{
+	color: #c0c0c0;
+	text-decoration: none;
+	padding: 25px;
+	line-height: 50px;
+	font-family: Bernard MT Condensed;
+
+}
+main{
+	height: 400px;
+	background: pink;
+}
+#izquierda{
+	height: 400px;
+	width: 150px;
+	background: green;
+	float: left;
+}
+article{
+	width: 500px;
+	height: 400px;
+	background: yellow;
+	float: left;
+}
+#derecha{
+	height: 400px;
+	width: 100px;
+	background: green;
+	float: left;
+}
+footer{
+	height: 50px;
+}

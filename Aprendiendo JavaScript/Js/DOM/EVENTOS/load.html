@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOAD</title>
+</head>
+<body onload="entrar()">
+    <p>Lorem ipsum dolor sit amet c
+    onsectetur adipisicing elit. Quod excepturi obc
+    aecati repellat commodi, soluta repellendus qui, modi
+     consequatur perspiciatis inventore officia eveniet, 
+     debitis iusto quo blanditiis nam optio laborum impedit.
+    </p>
+    <div class="" id="mostrar">
+        
+    </div>
+    <script>
+        function entrar(){
+            alert('Entrando a la pagina web')
+            let texto=''
+            if (navigator.cookieEnabled){
+                texto='Cookies estan habilitadas'
+            }
+            else{
+                texto='Cookies estan inhabilitadas'
+            }
+            document.getElementById('mostrar').innerHTML=texto;
+
+        }
+    </script>
+
+</body>
+</html>

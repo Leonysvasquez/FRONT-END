@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+  <a href="http://127.0.0.1:5500/AprendiendoHTML/inicio.html">INICIO</a>
+    <!--FORMULARIO-->
+    <!--form=action="form-handler.php"  LA ACCION A RELAIZAR CUANDO SE ENVIA EL FORMULARIO-->>
+
+    <!--form=action="form-handler.php target=_blank"  
+    LA ACCION A RELAIZAR CUANDO SE ENVIA EL FORMULARIO PERO EN OTRA PESTANA-->>
+
+    <!--form=action="form-handler.php method=GET"  EL METHOD ESPECIFICA EL METODO HTTP (GET O POST) . QUE SE VA USAR CUANDO SE ENVIAN LOS DATOS-->>
+
+   <!-- EL GET SE USA LOS DATOS SERAN VISIBLES EN LA URL DE LA PAGINA DE ENVIO LA LONGITU DE UNA URL    ES     LIMITADA (2048 CARACTERES)
+    NO SE TIENE QUE USAR GET PARA DATOS CONFIDENCIALES GET ES MEJOR PARA DATOS NO SEGUROS COMO PARA BUSCADORES -->> 
+
+    <!-- EL POST SE USA SIEMPRE QUE HAYA DATOS CONFIDENCIALES HAY QUE USAR POST .ESTE METODO NO MUESTRA LA INFORMACION  EN LA URL Y NO TIENE LIMITACION DE TAMAO -->> 
+
+    <form action="form-handler.php">
+        <fieldset>
+            <legend>INFORMACION PERSONAL</legend>
+       
+      <label >NOMBRE</label>
+
+        <input type="text" name="nombre" autofocus autocomplete="on"> <br> <br>
+
+        <label >Email</label>
+        <input type="email" name="email"> <br> <br>
+
+        <label>SELECCIONA TU LENGUAJE </label>
+        <select name="lenguajes" id="">
+            <option >JAVASCRIPT</option>
+            <option value="">PYTHON</option>
+            <option seleced value="">C#</option>
+        </select>
+        <br> <br>
+        <hr>
+
+        <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+        <br> <br>
+        <input type="radio" value="py" checked>PYHTON<br>
+        <input type="radio">JAVASCRIPT<br>
+        <input type="radio">C#<br>
+        <!--ONCLICK PARA ANADIR UNA FUNCION-->
+        <button type="button" onclick="alert('HOLA');">QLQ WA WA</button> 
+        <label for="">acepto los terminos</label>
+        <input type="checkbox">
+        <input type="submit">
+       <button type="submit">DALE PARA ALLA</button>
+
+       <input list="COLORES">
+        <datalist id="COLORES">
+            <option >AZUL</option>
+            <option >ROJO</option>
+            <option >VERDE</option>
+        </datalist>
+        <input type="text" name="name" value="Leonys" maxlength="5"> <!--MAXLENGTH MAXIMO DE CATACTERES-->
+        <input type="text" name="name" value="Leonys" readonly disabled> 
+        <input type="number" max="5" min="0" > 
+        <input type="file" multiple>
+        <input type="text" pattern="[A-Za-z]{3}">
+        <input type="text" name="name" placeholder="Nombre" required> <!--REQUIRED LLENAR OBLIGADO-->
+        <input type="number" step="5" autofocus > . <!--STEP DE 5 EN 5-->
+        <input type="datetime-local" name="date">
+        <input type="date" name="date">
+        <input type="month" name="date">
+        <input type="color" name="color">
+        <input type="range" name="num" min="0" max="50">
+        <input type="search" name="search">
+        <input type="tel" name="tel">
+        <input type="time" name="time">
+        </fieldset>
+
+    </form>
+
+    <form action="">
+        <label for="color">ELIGE UN COLOR</label>
+        <select name="color" id="color" size="1">
+            <option value="rojo" selected>ROJO</option>
+            <option value="azul" >AZUL</option>
+            <option value="verde" >VERDE</option>
+        </select>
+
+    </form>
+<!--LISTAS-->
+    <ul >
+        <li>JAVASCRIPT</li>
+        <li>PYTHON</li>
+        <li>C#</li>
+    </ul>
+    <ol start="30">
+        <li>JAVASCRIPT</li>
+        <li>PYTHON</li>
+        <li>C#</li>
+    </ol>
+    
+</body>
+</html>

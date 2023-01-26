@@ -1,0 +1,209 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f0f0f2 ,#f2f5f7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+
+.container{
+    width: 750px;
+    background: rgba(0, 158, 251, 1);
+    padding: 5rem;
+    border-radius: 10px;
+    position: relative;
+    height: 800px;
+}
+
+.container::before{
+    content:'';
+    position: absolute;
+    background: rgba(230, 233, 236, 0.15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.logo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.header{
+    font-weight:900;
+    color: rgb(5, 68, 184);
+    font-size: large;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.header h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+h3{
+    color:  rgb(178, 49, 42);
+}
+
+.header h1 + div{
+    font-size: calc(1rem*.8);
+    opacity: .8;
+}
+
+.contenido{
+    display: flex;
+   flex-direction: row;
+   display: grid;
+   gap: 1.5rem; 
+}
+
+.contenido.form-item{
+    position: relative;
+}
+
+.contenido .form-item {
+    position: absolute;
+    top: 5rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+ 
+.comtenido .item1{
+    position: absolute;
+}
+.item1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contenido  input[type="text"],
+.contenido input[type="email"]{
+    border: none;
+    outline:none;
+    background: white;
+    padding: 1rem 1.5rem;
+    padding-left: calc(2rem * 1.5);
+    border-radius: 10px;
+    width: 160%;
+    margin-bottom: 50px;
+    transition:background.5s;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    color: #f0f0f2;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.contenido input:focus{
+    background: white;
+}
+.empresa{
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+.sangre{
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    border: none
+}
+
+.paises{
+    width: 185px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    border: none
+}
+
+.provincias{
+    width: 185px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    border: none
+}
+
+.edad{
+    width: 185px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px; 
+    border: none;
+}
+
+.hpb{
+    width: 185px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    border: none
+}
+.contenido button{
+    background: rgb(26, 86, 197);
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    transition: background .5s;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido button:hover{
+    cursor: pointer;
+    background-color: rgb(71, 205, 50);
+}
+
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

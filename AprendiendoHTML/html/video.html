@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEOS</title>
+</head>
+
+
+<body>
+    <!--VIDEOS 25-50-->
+    <a href="http://127.0.0.1:5500/AprendiendoHTML/inicio.html">INCIO</a> <br> <br>
+    <a href="http://127.0.0.1:5500/form.html">FORM</a> <br><br>
+    <a href="tables.html">TABLAS</a> <br> <br>
+    <a href="">VIDEOS</a> <br> <br>
+
+<video width="1000px" height="500px" controls autoplay muted>
+    <source src="video.mp4" type="video/mp4"> 
+    <source src="video.ogv" type="video/ogg">
+    Tu navehador no es compatible con VIDEOS HTML5
+</video>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mTfp96tsmJs?autoplay=2 ?mute=1 ?loop=1 ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br> <br>
+<p>DEFINICION PROGRAMACION DE WIKIPEDIA  </p>
+<blockquote cite="https://es.wikipedia.org/wiki/Portal:Programaci%C3%B3n#:~:text=En%20inform%C3%A1tica%20la%20programaci%C3%B3n%20es,fuente%20de%20un%20programa%20inform%C3%A1tico.">En informática la programación es un proceso por el cual se escribe (en un lenguaje de programación), se prueba, se depura y se mantiene el código fuente de un programa informático.</blockquote>
+
+
+<!--LA ETIQUETA ABBR DEFINE UNA ABREVIACIONES GRACIAS A ESTA ETIQUETA PODEMOS DARLE INFORMACION AL NAVEGADOR DEL SIGNIFICADO DE LAS ABREVIACIONES.-->
+<p>La <abbr title="Programacion Orinetada a Objectos" > POO</abbr> Es muy util</p>
+
+<!--etiqueta ADRESS DEFINE LA INFORMACION DE CONTACTO DE UN DOCUMENTO . SE SUELE MOSTRAR EN LOS NAVEGADORES EN CURSIVA-->
+    <address>
+        Leonys <br>
+        Visita mi web: <br>
+        Leonysgang@gmail.com <br>
+        Calle turey RD . D.N <br>
+    </address>
+
+<p><cite>El principito</cite> Por antoine de Saint-expurey .Punlicado en 1943</p>
+
+
+<!--ESTA ETIQUETA CONTIENE ELEMENTOS SOURCE Y CAD UNO DE ESTOS HACE REFERNCIA A UNA IMAGEN DIFERENTE 
+Y EL NAVEGADOR ESCOGE UNA DE ELLAS SEHUN LA PATALLA O EL DISPOSITIVO 
+EN LOS ATRIBUTOS SOURCE DEL SOURCE SE DESCRIBE CUADNO SE TIENE QUE USAR CADA IMAGEN 
+ES IMPORTANTE PONER IMG COMO ULTIMO HIJO POR SI EL NAVEGADOR NO SOPORTA EL PICTURE O 
+NO ENCUENTRA EL SOURCE ADECUADO ENTONCES CARGA EL IMG-->
+
+<!--NORMALMENTE SE USA EN DOS CASOS 
+ANCHO DE BANDA PARA DISPOSITIVOS CON PATALLAS PEQUENAS NO HACE FALTA CARGAR IMAGES MUY GRANDES
+SOPORTE DE FORMATOS: ALGUNOS NAVEGADORES NO SOPORTAN TODOS LOS FORMATOS DE IMAGEN 
+USANDO PICTURE EL NAVEGADOR COGERA LA PRIMERA IMAGEN DEL FORMATO QUE RECONOZCA-->
+<picture>
+    <source media="(min-width :500px)" srcset="images/prog.jpeg">
+    <source media="(min-width :300px)" srcset="images/prog.jpeg" >
+    <img src="images/prog.jpeg" alt="">
+</picture>
+
+
+<input list="browsers">
+    <datalist id="browser">
+        <option value="Internte Explore">
+        <option value="FIRE FOX">
+    </datalist>
+
+<!--LISTA DE DESCRIPTIONES-->
+
+ <p>Abrimos a las <time>10:00 </time> TODOS LOS DIAS </p>  
+ <p> tENGO UNA <span style="color: RED;">CENA</span>  EL DIA DE <time datetime="2020-12-25"> Navidad</time></p>
+</body>
+</html> 
