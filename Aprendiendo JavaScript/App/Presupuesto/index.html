@@ -8,7 +8,7 @@
     <link href="/Aprendiendo JavaScript/App/Presupuesto/CSS/estilos.css" rel='stylesheet'/>
 
 </head>
-<body onload="cargarApp()">
+<body onload='cargarApp()'>
         <div class="cabecero" >
             <div class="presupuesto">
                 <div class="presupuesto_titulo">
@@ -22,6 +22,7 @@
                     <div class="derecha">
                         <div class="presupuesto_ingreso--valor" id="ingresos">
                             +4,000.00
+                            ...
                         </div>
                         <div class="presupuesto_ingreso--porcentaje">
                             &nbsp;
@@ -41,10 +42,72 @@
               </div>
             </div>
         </div>
+        <div class="contenedor limpiarEstilos">
+            <div class="ingreso">
+                <h2 class="ingreso_titulo">
+                    Ingresos
+                </h2>
+                <div id="lista-ingreso">
+                    <div class="elemento limpiarEstilos">
+                        <div class="elemento_descripcion">Salario</div>
+                        <div class="derecha limpiarEstilos">
+                            <div class="elemento_valor">
+                                +2,000.00
+                            </div>
+                            <div class="elemento_eliminar">
+                                <button class="elemento_eliminar--btn">
+                                    <ion-icon name="close-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                     
+                    </div>
+                    
+                    <div class="elemento limpiarEstilos">
+                        <div class="elemento_descripcion">Venta Coche</div>
+                        <div class="derecha limpiarEstilos">
+                            <div class="elemento_valor"> +1,500.00</div>
+                            <div class="elemento_eliminar">
+                                <button class="elemento_eliminar--btn">
+                                    <ion-icon name="close-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="egreso">
+                <h2 class="ingreso_titulo">Egresos</h2>
+                <div id="lista-ingreso">
+                    <div class="elemento limpiarEstilos">
+                        <div class="elemento_descripcion">Renta departamento</div>
+                        <div class="derecha limpiarEstilos">
+                            <div class="elemento_valor">-1,000.00</div>
+                            <div class="elemento_porcentaje">21%</div>
+                            <div class="elemento_eliminar">
+                                <button class="elemento_eliminar--btn">
+                                    <ion-icon name="close-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>                     
+                    </div> 
+                    <div class="elemento limpiarEstilos">
+                        <div class="elemento_descripcion">Ropa</div>
+                        <div class="derecha limpiarEstilos">
+                            <div class="elemento_valor">-500.00</div>
+                            <div class="elemento_porcentaje">21%</div>
+                            <div class="elemento_eliminar">
+                                <button class="elemento_eliminar--btn">
+                                    <ion-icon name="close-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+  <script src="/Aprendiendo JavaScript/App/Presupuesto/JS/Dato.js"></script>
+  <script src="/Aprendiendo JavaScript/App/Presupuesto/JS/app.js"></script>
 
-    <script src='/Aprendiendo JavaScript/App/Presupuesto/JS/app.js'></script>
-    <script src='/Aprendiendo JavaScript/App/Presupuesto/JS/Dato.js'></script>
-    <script src='/Aprendiendo JavaScript/App/Presupuesto/JS/Egreso.js'></script>
-    <script src='/Aprendiendo JavaScript/App/Presupuesto/JS/Ingreso.js'></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

@@ -18,3 +18,14 @@ class Dato{
         return this._valor=valor;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
